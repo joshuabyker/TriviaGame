@@ -1,96 +1,66 @@
-var FrodosSword;
-var Anakin;
-var wand;
-var Robin;
-var Identity
-var Naruto;
-var Matrix;
-var Dog;
-var Ford;
-var actor;
-var song;
-var UserGuess;
-var Answer;
-var RightAnswer;
-var WrongAnswer
-
-$("#num1");{
-    
-if(UserGuess==true){
-RightAnswer++;
-}else(WrongAnswer++);
-}
-
-$("#num2");{
-    
-    if(UserGuess==true){
-        RightAnswer++;
-    }else(WrongAnswer++);
-}
-
-$("#num3");{
-
-    if(UserGuess==true){
-        RightAnswer++;
-
-    }else(WrongAnswer++);
-}
-
-$("#num4");{
-    if(UserGuess==true);{
-        RightAnswer++;
-    }else(WrongAnswer++)++
-}
-
-$("#num5");{
-    if(UserGuess==true){
-        RightAnswer++;
-
-    }else(WrongAnswer++);
-}
 
 
-$("#num6");{
-    if(UserGuess==true){
-        RightAnswer++;
 
-    }else(WrongAnswer++);
-}
+  var NumOfQuestions=10;
+  var NumofChoices=3;
+  var WrongAnswers=0;
+  var CorrectAnswers=0;
+  var Answers= new Array(10);
+  Answers[0]="Sting";
+  Answers[1]="Blue";
+  Answers[2]="Holly";
+  Answers[3]="DickGrayson";
+  Answers[4]="Thor";
+  Answers[5]="ShadowClonejutsu";
+  Answers[6]="KeanuReeves";
+  Answers[7]="Pluto";
+  Answers[8]="IndianaJones";
+  Answers[9]="Europe";
+  function checkAnswer(form){
+    let i=0;
+    var currentSelection;
+      for(i=0;i<Answers.length;i++){
+          if(currentSelection == Answers){
+              CorrectAnswers+1;
+          }else(CorrectAnswers+0)
+      }
+      if(currentSelection===!Answers){
+          WrongAnswers++;
+      }
+  }
 
-$("#num7");{
-    if(UserGuess==true){
-        RightAnswer++;
+score = Math.floor(CorrectAnswers/NumOfQuestions*100);
+form.percentage.value == score+ "%";
 
-    }else(WrongAnswer++);
-}
+$("#Submit").on("click",function(){
+    console.log("AUGH, I've Been clicked")
+});
 
-$("#num8");{
-    if(UserGuess==true){
-        RightAnswer++;
 
-    }else(WrongAnswer++);
-}
 
-$("#num9");{
-    if(UserGuess==true){
-        RightAnswer++;
 
-    }else(WrongAnswer++);
-}
 
-$("#num9");{
-    if(UserGuess==true){
-        RightAnswer++;
 
-    }else(WrongAnswer++);
-}
 
-$("#num10");{
-    if(UserGuess==true){
-        RightAnswer++;
 
-    }else(WrongAnswer++);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
