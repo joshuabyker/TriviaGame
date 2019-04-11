@@ -6,7 +6,7 @@
   var WrongAnswers=0;
   var CorrectAnswers=0;
   var Answers= new Array(10);
-  Answers[0]="Sting";
+  Answers[0]="Sting"    ;
   Answers[1]="Blue";
   Answers[2]="Holly";
   Answers[3]="DickGrayson";
@@ -21,18 +21,19 @@
     var currentSelection;
       for(i=0;i<Answers.length;i++){
           if(currentSelection == Answers){
-              CorrectAnswers+1;
+              CorrectAnswers++;
           }else(CorrectAnswers+0)
       }
       if(currentSelection===!Answers){
           WrongAnswers++;
       }
+
   }
 
 score = Math.floor(CorrectAnswers/NumOfQuestions*100);
 form.percentage.value == score+ "%";
 
-$("#Submit").on("click",function(){
+$("submit").on("click",function(){
     console.log("AUGH, I've Been clicked")
 });
 
