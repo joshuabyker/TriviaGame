@@ -1,0 +1,12 @@
+body{
+    padding: 120px;
+    background-color: purple;
+    color: antiquewhite;
+    border: 40px solid gold;
+    font-style: italic;
+}
+#jumbotron{
+    color: gold;
+    font-weight: 100;
+    font-size: 75px;
+}
